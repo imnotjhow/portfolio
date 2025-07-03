@@ -1,0 +1,83 @@
+/* RESET simples */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Alguns estilos para o portfólio */
+.projeto {
+  background: white;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form button {
+  padding: 10px 15px;
+  background: #0077cc;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005999;
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+  .projeto {
+    display: flex;
+    justify-content: space-between;
+  }
