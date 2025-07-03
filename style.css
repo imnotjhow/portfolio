@@ -1,6 +1,11 @@
-/* RESET simples */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* tira margens e preenchimentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* estilo geral do corpo da página */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -8,34 +13,41 @@ body {
   color: #333;
 }
 
+/* fundo azul no menu */
 header {
   background: #0077cc;
   padding: 10px 0;
 }
 
+/* deixa o menu na horizontal e centralizado */
 nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
+/* espaço entre os itens do menu */
 nav li {
   margin: 0 15px;
 }
 
+/* links do menu */
 nav a {
   color: white;
   text-decoration: none;
 }
 
+/* quando passa o mouse, sublinha o link */
 nav a:hover {
   text-decoration: underline;
 }
 
+/* espaço interno do conteúdo principal */
 main {
   padding: 20px;
 }
 
+/* estilo do rodapé */
 footer {
   text-align: center;
   padding: 10px;
@@ -43,7 +55,7 @@ footer {
   margin-top: 20px;
 }
 
-/* Alguns estilos para o portfólio */
+/* caixas dos projetos no portfólio */
 .projeto {
   background: white;
   margin-bottom: 15px;
@@ -51,6 +63,7 @@ footer {
   border-radius: 5px;
 }
 
+/* estilo básico do formulário (caso use) */
 form label {
   display: block;
   margin: 10px 0;
@@ -63,6 +76,7 @@ form textarea {
   margin-top: 5px;
 }
 
+/* botão do formulário */
 form button {
   padding: 10px 15px;
   background: #0077cc;
@@ -71,13 +85,13 @@ form button {
   cursor: pointer;
 }
 
+/* muda a cor do botão quando passa o mouse */
 form button:hover {
   background: #005999;
 }
 
-/* Responsividade */
+/* deixa os projetos lado a lado em telas maiores */
 @media (min-width: 600px) {
   .projeto {
     display: flex;
     justify-content: space-between;
-  }
